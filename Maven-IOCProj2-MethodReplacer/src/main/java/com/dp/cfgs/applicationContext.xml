@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="mr" class="com.dp.beans.IntrAmtCalcReplacer">
+<property name="IntrRate" value="1.2f"></property>
+</bean>    
+
+<bean id = "ca" class="com.dp.beans.CalcIntrAmt" >
+<replaced-method name="regAmt" replacer="mr">
+<arg-type>float</arg-type>
+<arg-type>float</arg-type>
+</replaced-method>
+</bean>         
+        
+</beans>        
