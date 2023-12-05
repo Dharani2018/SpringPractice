@@ -21,6 +21,7 @@ public class BootIocProj1SeasonFinderApplication {
 		ApplicationContext ctx =   SpringApplication.run(BootIocProj1SeasonFinderApplication.class, args);
 		SeasonFinder sf = ctx.getBean("sf", SeasonFinder.class);
 		System.out.println(sf.findSeason("Varnika Parimella"));
+		System.out.println(sf.findSeason("Dharani Parimella"));
 	}
 
 }
