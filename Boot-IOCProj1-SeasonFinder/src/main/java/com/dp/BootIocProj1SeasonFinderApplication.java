@@ -20,7 +20,7 @@ public class BootIocProj1SeasonFinderApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx =   SpringApplication.run(BootIocProj1SeasonFinderApplication.class, args);
 		SeasonFinder sf = ctx.getBean("sf", SeasonFinder.class);
-		System.out.println(sf.findSeason("Varnika"));
+		System.out.println(sf.findSeason("Varnika P"));
 	}
 
 }
